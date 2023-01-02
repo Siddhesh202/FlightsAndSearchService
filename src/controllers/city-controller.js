@@ -22,7 +22,7 @@ const create = async (req, res) => {
             success: false,
             message: "Not able to create a city",
             err: error
-        })
+        });
     }
 }
 
