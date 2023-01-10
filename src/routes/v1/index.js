@@ -26,6 +26,10 @@ router.post('/flights',
 
 router.get('/flights', FlightController.getAll);
 
+router.get('/flights/:id', FlightController.get);
+
+router.patch('/flights/:id', FlightController.update);
+
 // Airport CRUD API
 router.post('/airports', AirportController.create);
 
